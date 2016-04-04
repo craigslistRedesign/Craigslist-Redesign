@@ -1,0 +1,2 @@
+// JSON Document
+	var english= {myH1: 'H1 Tag content', myDiv: 'Div Tag content'};

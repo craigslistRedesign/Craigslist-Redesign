@@ -1,0 +1,3 @@
+// JSON Document
+
+var hindi={myH1: 'H1 टैग सामग्री',myDiv: 'Div टैग सामग्री'};

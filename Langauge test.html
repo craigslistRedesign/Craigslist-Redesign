@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Language translation test</title>
+</head>
+<body>
+<p>
+  <label>
+    <input type="radio" name="RadioGroup1" value="English" id="rad_English" onClick="LoadEnglish()">
+English</label>
+  <br>
+  <label>
+    <input type="radio" name="RadioGroup1" value="Hindi" id="rad_Hindi" onClick="LoadHindi()">
+Hindi</label>
+  <br>
+</p>
+<h1 id='myH1'>This is the content for Layout H1 Tag</h1>
+<div id= 'myDiv'>Content for New div Tag Goes Here</div>
+
+<script type="text/javascript" src="English.json"></script>
+<script type="text/javascript" src="Hindi.json"></script>
+<script>
+window.addEventListener(onload, LoadLanguage());
+
+//var EnglishData = JSON.parse(<input type="number">english);
+function LoadLanguage()
+{
+	//console.log('In load language');
+	document.getElementById('myDiv').innerHTML = english.myDiv;
+	document.getElementById('myH1').innerHTML = english.myH1;
+}
+
+function LoadEnglish()
+{
+	document.getElementById('myDiv').innerHTML = english.myDiv;
+	document.getElementById('myH1').innerHTML = english.myH1;
+}
+
+function LoadHindi()
+{
+	document.getElementById('myDiv').innerHTML = hindi.myDiv;
+	document.getElementById('myH1').innerHTML = hindi.myH1;
+}
+</script>
+</body>
+</html>
